@@ -52,9 +52,9 @@
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
-            padding: 60px 50px;
+            padding: 50px 40px;
             text-align: center;
-            max-width: 600px;
+            max-width: 650px;
             width: 90%;
             z-index: 1;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -68,7 +68,7 @@
 
         .icon {
             font-size: 50px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: inline-block;
             animation: pulse 2s infinite;
         }
@@ -79,16 +79,28 @@
             100% { transform: scale(1); }
         }
 
+        /* السطر الأول: مرحباً بك في */
         h1 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 900;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             background: linear-gradient(to left, #38bdf8, #818cf8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             line-height: 1.4;
         }
 
+        /* السطر الثاني: اسم الشركة */
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #f8fafc;
+            margin-bottom: 25px;
+            line-height: 1.4;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* الكلام الذي تحت */
         p {
             font-size: 18px;
             color: #94a3b8;
@@ -97,11 +109,21 @@
             font-weight: 400;
         }
 
+        /* تنسيق خاص لاسم النظام ERP ليكون بارزاً */
+        .erp-name {
+            display: block;
+            font-size: 22px;
+            font-weight: 900;
+            color: #38bdf8;
+            margin: 10px 0;
+            text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
         /* الزر الفخم */
         .btn {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: white;
-            padding: 18px 50px;
+            padding: 16px 45px;
             text-decoration: none;
             font-size: 20px;
             font-weight: 700;
@@ -152,10 +174,15 @@
     <div class="glass-card">
         <div class="icon">🚀</div>
        
-        <!-- يمكنك تعديل النصوص من هنا -->
-        <h1>مرحباً بك في...
-        شركة الحصن سوفت للحلول البرجية والمحاسبية</h1>
-        <p>نقدم لك أحدث إصدار من أنظمتنا البرمجية المتكاملة نظام الحصن سوفت ERP.<br>اضغط على الزر أدناه لبدء التحميل والتثبيت الآمن.</p>
+        <!-- الترتيب الجديد للنصوص -->
+        <h1>مرحباً بك في...</h1>
+        <h2>شركة الحصن سوفت للحلول البرمجية والمحاسبية</h2>
+       
+        <p>
+            نقدم لك أحدث إصدار من أنظمتنا البرمجية المتكاملة
+            <span class="erp-name">نظام الحصن سوفت ERP</span>
+            اضغط على الزر أدناه لبدء التحميل والتثبيت الآمن.
+        </p>
        
         <!-- ⚠️ هام: غير اسم الملف setup.exe إلى اسم الملف الذي رفعته -->
         <a href="setup.exe" class="btn">تحميل وتثبيت الآن</a>
